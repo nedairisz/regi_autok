@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    max-width: 1000px;
+    margin: auto;
+}
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "h h"
+    "n n"
+    "a as"
+    "f f"
+    ;
+}
+
+header{
+    grid-area: h;
+    height: 60px;
+    background-color: rgb(137, 204, 137);
+}
+h1{
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    grid-area: n;
+    padding-bottom: 30px;
+}
+nav ul{
+    background-color: green;
+    list-style: none;
+    padding: 0px;
+    gap: 0px;
+    display: grid;
+    grid-template-columns: 100px 250px 100px;
+    margin: 0px;
+}
+nav ul li{
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid gray;
+    margin: 0px;
+}
+nav ul  :hover{
+    background-color: gray;
+}
+nav a{
+    text-decoration: none;
+    color: beige;
+}
+li{
+    text-align: left;
+}
+article{
+    grid-area: a;
+}
+article p{
+    padding-left: 35px;
+}
+aside{
+    grid-area: as;
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin: 20px;
+}
+.kepek div img{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(168, 166, 166);
+}
+footer{
+    background-color: green;
+}
+footer p{
+    text-align: center;
+    color: beige;
+    margin: 5px;
+}
+@media only screen and (max-width: 700px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "f"
+        ;
+    }
+  }
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    height: 20px;
+}
+tr:nth-child(even){
+    background-color: rgb(212, 216, 212);
+}
+tr :hover{
+    background-color: rgb(189, 233, 181);
+}
+tr{
+    border-collapse: collapse;
+}
+th{
+    border-collapse: collapse;
+    text-align: left;
+    border-bottom: 1px solid black;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+td{
+    border-collapse: collapse;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.ember{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ember div{
+    border: 1px solid rgb(223, 222, 222);
+    margin: 10px;
+}
+.ember h2{
+    color: green;
+    padding: 10px;
+    margin: 0px;
+}
+.ember img{
+    margin-left: 30px;
+    width: 80%;
+}
+.ember p{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
